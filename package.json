@@ -1,5 +1,6 @@
 {
   "name": "market-tt",
+  "homepage": "https://vadym-mishchenko.github.io/market/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
