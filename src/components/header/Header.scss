@@ -1,0 +1,71 @@
+@import '../../utils/_variables.scss';
+@import '../../utils/typography';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 101px 0 117px;
+
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid rgb(233, 232, 232);
+
+  &__link {
+    margin-right: 12px;
+    padding: 30px 10px 28px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-white;
+    color: #5ECE7B;
+    background-color: $color-white;
+
+    transition: border-bottom 0.3s;
+
+    &:hover {
+      border-bottom: 2px solid $color-green;
+    }
+  }
+
+  &__logo {
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    background-image: url(../../img/market-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__options {
+    display: flex;
+    gap: 22px;
+  }
+
+  &__select {
+    border: none;
+    outline: none;
+  }
+
+  &__select-item {
+    background-color: $color-white;
+
+    &:act {
+      background-color: #5ECE7B;
+    }
+  }
+
+  &__basket {
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    background-image: url(../../img/basket.png);
+    background-size: cover;
+  }
+}
